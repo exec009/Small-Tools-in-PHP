@@ -9,7 +9,7 @@ function strToBin($input)
 	foreach($chunks as $chunk)
 	{
 		$temp=base_convert($chunk,16,2);
-		$ret.=str_repeat("0", 8 - strlen($temp)) . $temp." ";//remove this space
+		$ret.=str_repeat("0", 8 - strlen($temp)) . $temp." ";
 	}
 	return $ret;
 }
